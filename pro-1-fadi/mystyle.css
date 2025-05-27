@@ -1,0 +1,229 @@
+/* ====== إعدادات عامة للجسم ====== */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+  background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+  color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ====== شريط التنقل ====== */
+.navbar {
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.7);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  user-select: none;
+}
+
+.menu {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1.5px solid transparent;
+  border-radius: 12px;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: #34495e;
+  border-color: #ecf0f1;
+  outline: none;
+}
+
+/* ====== قسم التعريف "من نحن" ====== */
+.about-section {
+  background-color: #ffffffcc;
+  margin: 40px auto;
+  padding: 32px 25px;
+  width: 90%;
+  max-width: 720px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  line-height: 1.7;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 22px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.about-section b {
+  font-size: 19px;
+  color: #34495e;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* ====== الخيارات الرئيسية ====== */
+.main-options {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin: 35px auto;
+  padding: 0 15px;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.option-box {
+  flex: 1 1 200px;
+  max-width: 220px;
+  padding: 26px 20px;
+  background-color: #2c3e50;
+  border-radius: 18px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.25s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(44, 62, 80, 0.35);
+  user-select: none;
+  user-drag: none;
+}
+
+.option-box:hover,
+.option-box:focus {
+  background-color: #34495e;
+  transform: scale(1.08);
+  box-shadow: 0 8px 30px rgba(52, 73, 94, 0.6);
+  outline: none;
+}
+
+/* ====== قسم الأخبار ====== */
+.news-section {
+  background-color: #ffffffcc;
+  margin: 40px auto 60px;
+  padding: 30px 25px;
+  width: 90%;
+  max-width: 1020px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+.news-section h2 {
+  font-size: 28px;
+  margin-bottom: 32px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+}
+
+.news-box {
+  background-color: white;
+  border-radius: 14px;
+  width: 220px;
+  padding: 18px 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.news-box:hover,
+.news-box:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  outline: none;
+}
+
+.news-box img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: transform 0.5s ease-in-out;
+  user-select: none;
+  user-drag: none;
+}
+
+.news-box img:hover,
+.news-box img:focus {
+  transform: scale(1.07) rotate(1.5deg);
+  outline: none;
+}
+
+.news-box p {
+  font-size: 16px;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+/* ====== توحيد حجم الصور ====== */
+img {
+  max-width: 100%;
+  height: 140px; /* نفس ارتفاع الصور */
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 15px auto;
+  user-select: none;
+  user-drag: none;
+}
+
+/* ====== استجابة التصميم للأجهزة الصغيرة ====== */
+@media (max-width: 780px) {
+  .main-options {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .option-box {
+    max-width: 100%;
+    flex-basis: 45%;
+  }
+}
+
+@media (max-width: 450px) {
+  .option-box {
+    flex-basis: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <link rel="stylesheet" href="mysheet.css">
+  <meta charset="UTF-8" />
+  <title>فادي عضلات</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="FADI MUSCLES.png" alt="لوقو فادي عضلات" width="50" style="vertical-align: middle;" />
+      فادي عضلات 💪
+    </div>
+    <div class="menu">
+      <a href="bla bla.html.html" title="الصفحة الرئيسية">🏠 الرئيسية</a>
+    </div>
+  </div>
+
+  <div class="main-options">
+    <div class="option-box" onclick="location.href='برامج التمارين.html'">برامج التمارين</div>
+    <div class="option-box" onclick="location.href='النصائح الغذائية.html'">النصائح الغذائية</div>
+    <div class="option-box" onclick="location.href='اهداف اللياقة.html'">أهداف اللياقة</div>
+    <div class="option-box" onclick="location.href='نصائح عامة.html'">نصائح عامة</div>
+    <div class="option-box" onclick="location.href='تفاصيل البرامج.html'">تفاصيل البرامج</div>
+    <div class="option-box" onclick="location.href='نصائح غذائية 2.html'">النصائح الغذائية 2</div>
+  </div>
+
+  <div class="contact-section">
+    <h2>اتصل بنا</h2>
+    <form action="mailto:example@email.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="الاسم" required />
+      <input type="number" name="phone" placeholder="رقم الهاتف" required pattern="\d*" inputmode="numeric" />
+      <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+
+      <div class="gender-selection">
+        <label>
+          <input type="radio" name="gender" value="ذكر" required /> ذكر
+        </label>
+        <label>
+          <input type="radio" name="gender" value="أنثى" /> أنثى
+        </label>
+      </div>
+
+      <div class="contact-methods">
+        <input type="checkbox" id="emailContact" name="contactMethod" value="البريد الإلكتروني" />
+        <label for="emailContact">البريد الإلكتروني</label>
+
+        <input type="checkbox" id="phoneContact" name="contactMethod" value="الهاتف" />
+        <label for="phoneContact">الهاتف</label>
+
+        <input type="checkbox" id="mailContact" name="contactMethod" value="البريد الورقي" />
+        <label for="mailContact">البريد الورقي</label>
+      </div>
+
+      <input type="submit" value="إرسال" />
+    </form>
+
+    <div class="social-container">
+      <div class="social-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" alt="إنستغرام" />
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">إنستغرام</a>
+      </div>
+      <div class="social-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="فيسبوك" />
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">فيسبوك</a>
+      </div>
+      <div class="social-box">
+	   <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب" />
+       واتساب</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
