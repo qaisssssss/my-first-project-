@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>فادي عضلات</title>
+  <link rel="stylesheet" href="mystyle.css">
+
+  <style>
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #000;
+    }
+
+    .logo img {
+      width: 60px;
+      height: auto;
+    }
+  </style>
+</head>
+<script>
+  let zoomLevel = 1;
+
+  function zoomIn() {
+    zoomLevel += 0.1;
+    document.body.style.zoom = zoomLevel;
+  }
+
+  function zoomOut() {
+    if (zoomLevel > 0.5) {
+      zoomLevel -= 0.1;
+      document.body.style.zoom = zoomLevel;
+    }
+  }
+
+  function resetZoom() {
+    zoomLevel = 1;
+    document.body.style.zoom = zoomLevel;
+  }
+</script>
+
+<body dir="rtl">
+  <div class="navbar">
+    <div class="logo">
+      فادي عضلات 💪
+    </div>
+    <div class="menu">
+      <a href="الصفحة الرئيسية.html" title="الصفحة الرئيسية">🏠 الرئيسية</a>
+      <a href="خدمة العملاء.html">خدمة العملاء</a>
+    </div>
+  </div>
+  <div class="zoom-controls">
+    <button onclick="zoomIn()">تكبير</button>
+    <button onclick="zoomOut()">تصغير</button>
+    <button onclick="resetZoom()">إعادة الحجم</button>
+  </div>
+  <div class="about-section">
+    <h2>نبذة تعريفية عن الموقع</h2>
+    <b>موقع فادي عضلات هو موقع يهتم بالصحة واللياقة البدنية، يقدمه فادي، مدرب ومؤثر مهتم بمساعدة الناس لتحقيق أهدافهم
+      الجسدية.</b>
+  </div>
+
+  <div class="main-options">
+    <div class="option-box" onclick="location.href='برامج التمارين.html'">برامج التمارين</div>
+    <div class="option-box" onclick="location.href='النصائح الغذائية.html'">النصائح الغذائية</div>
+    <div class="option-box" onclick="location.href='اهداف اللياقة.html'">أهداف اللياقة</div>
+    <div class="option-box" onclick="location.href='نصائح عامة.html'">نصائح عامة</div>
+    <div class="option-box" onclick="location.href='تفاصيل البرامج.html'">تفاصيل البرامج</div>
+    <div class="option-box" onclick="location.href='الجزء الثاني من النصائح الغذائية.html'">الجزء الثاني من النصائح
+      الغذائية</div>
+  </div>
+
+  <div class="news-section">
+    <h2>آخر الأخبار</h2>
+    <div class="news-grid">
+      <div class="news-box">
+        <img src="Mrolympialogo.jpeg" alt="خبر 1" />
+        <p>بطولة مستر أولمبيا 2025 تستعد لاستقبال أكبر عدد من المشاركين في تاريخها.</p>
+      </div>
+      <div class="news-box">
+        <img src="تمارين-القوة-والتحمل-للرجال.jpg" alt="خبر 2" />
+        <p>أبحاث جديدة تؤكد أهمية تمارين القوة في تقوية القلب وتحسين المزاج.</p>
+      </div>
+      <div class="news-box">
+        <img src="images.jpg" alt="خبر 3" />
+        <p>الرياضي هادي شابان يحقق رقماً قياسياً جديداً في رفع الأثقال.</p>
+      </div>
+      <div class="news-box">
+        <img src="8833835_1454669195.jpg" alt="خبر 4" />
+        <p>مدربون عالميون يقدمون نصائح عبر الإنترنت لبناء العضلات بسرعة وأمان.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
